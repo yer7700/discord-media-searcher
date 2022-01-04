@@ -1,0 +1,12 @@
+{
+    "send_config": [
+    {
+        "_comment": "Use database file (database.txt or something) if you have a lot of keywords, if not, skip database_path string",
+         "database_path": "C:/Users/User/Desktop/Discord Media Searcher/database",
+         "keywords": ["Not","Recommend"],
+         "formats": ["mp4","mp3","png","Really?","imagine using json for this data"],
+         "_comment": "Paste link (media.discordapp.net) in next string and change name.format of file (looks like 'myvideo.mp4') in link to FNAMELINK.FFORMAT",
+         "link": "https://media.discordapp.net/attachments/926378973615775794/927482426249322536/FNAMELINK.FFORMAT"
+    }
+    ]
+}
