@@ -15,16 +15,12 @@ with open("config") as cfg:
 
 print("WORKING...")
 done = 0
-lastdone = 0
+kfmul = len(kw)*len(formats)
 for keyword in kw:
     for fformat in formats:
         done += 1
-        percentage_formula = round(done/(len(kw)+len(formats)))
-        if not lastdone == percentage_formula:
-            print(f"{percentage_formula}% done.")
-            lastdone = round(done/(len(kw)+len(formats)))
+        print(f"{done}/{kfmul} done.")
         reqcode = requests.get(link.replace("FNAMELINK",keyword).replace("FFORMAT",fformat))
         if reqcode.ok:
             print(link.replace("FNAMELINK",keyword).replace("FFORMAT",fformat), f"{reqcode}")
-
 print("DONE!")
